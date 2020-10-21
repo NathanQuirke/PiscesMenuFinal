@@ -73,7 +73,7 @@ public class Lunch_Menu extends Fragment {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(v).navigate(R.id.action_lunch_Menu_to_starter_menu);
+                Navigation.findNavController(v).navigate(R.id.action_lunch_Menu_to_drinksmenu);
             }
         });
     }

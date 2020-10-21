@@ -97,7 +97,7 @@
         android:layout_marginStart="43dp"
         android:layout_marginEnd="68dp"
         android:layout_marginBottom="137dp"
-        android:text="Was unable to get 2 seperate menus working using 2 buttons, kept whitescreening my app. Also could not retrieve the checkbox values to import into the summary here. Everything else should work."
+        android:text="Could not retrieve the checkbox values to import into the summary here. Everything else should work."
         app:layout_constraintBottom_toTopOf="@+id/backhome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

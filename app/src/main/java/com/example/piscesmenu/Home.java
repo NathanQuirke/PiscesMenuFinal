@@ -69,11 +69,19 @@ public class Home extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Button menu1 = view.findViewById(R.id.starterbtn2);
         Button menu = view.findViewById(R.id.starterbtn);
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.action_home2_to_lunch_Menu);
+            }
+        });
+
+        menu1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_home2_to_starter_menu);
             }
         });
     }

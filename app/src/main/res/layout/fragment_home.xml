@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".Home" >
 
+    <Button
+        android:id="@+id/starterbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="28dp"
+        android:text="Dinner Menu"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
@@ -28,12 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="56dp"
-        android:text="Food menu"
+        android:layout_marginBottom="104dp"
+        android:text="Lunch menu"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView

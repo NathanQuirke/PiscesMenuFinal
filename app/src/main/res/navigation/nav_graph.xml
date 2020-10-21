@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_home2_to_lunch_Menu"
             app:destination="@id/lunch_Menu" />
+        <action
+            android:id="@+id/action_home2_to_starter_menu"
+            app:destination="@id/starter_menu" />
     </fragment>
     <fragment
         android:id="@+id/lunch_Menu"
@@ -20,8 +23,8 @@
         android:label="fragment_lunch__menu"
         tools:layout="@layout/fragment_lunch__menu" >
         <action
-            android:id="@+id/action_lunch_Menu_to_starter_menu"
-            app:destination="@id/starter_menu" />
+            android:id="@+id/action_lunch_Menu_to_drinksmenu"
+            app:destination="@id/drinksmenu" />
     </fragment>
     <fragment
         android:id="@+id/ordersummary"
