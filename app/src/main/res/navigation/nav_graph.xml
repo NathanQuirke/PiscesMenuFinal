@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.piscesmenu.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_lunch_Menu"
+            app:destination="@id/lunch_Menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/lunch_Menu"
+        android:name="com.example.piscesmenu.Lunch_Menu"
+        android:label="fragment_lunch__menu"
+        tools:layout="@layout/fragment_lunch__menu" >
+        <action
+            android:id="@+id/action_lunch_Menu_to_starter_menu"
+            app:destination="@id/starter_menu" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersummary"
+        android:name="com.example.piscesmenu.ordersummary"
+        android:label="fragment_ordersummary"
+        tools:layout="@layout/fragment_ordersummary" >
+        <action
+            android:id="@+id/action_ordersummary_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/dinner_menu"
+        android:name="com.example.piscesmenu.dinner_menu"
+        android:label="fragment_dinner_menu"
+        tools:layout="@layout/fragment_dinner_menu" >
+        <action
+            android:id="@+id/action_dinner_menu_to_drinksmenu"
+            app:destination="@id/drinksmenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/drinksmenu"
+        android:name="com.example.piscesmenu.drinksmenu"
+        android:label="fragment_drinksmenu"
+        tools:layout="@layout/fragment_drinksmenu" >
+        <action
+            android:id="@+id/action_drinksmenu_to_ordersummary"
+            app:destination="@id/ordersummary" />
+    </fragment>
+    <fragment
+        android:id="@+id/starter_menu"
+        android:name="com.example.piscesmenu.starter_menu"
+        android:label="fragment_starter_menu2"
+        tools:layout="@layout/fragment_starter_menu2" >
+        <action
+            android:id="@+id/action_starter_menu_to_dinner_menu"
+            app:destination="@id/dinner_menu" />
+    </fragment>
+</navigation>

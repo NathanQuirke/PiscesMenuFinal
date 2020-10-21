@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="200dp"
+        android:text="Pisces"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="156dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="439dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="70dp"
+        android:text="@string/menu"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/curry"
+        android:layout_width="223dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/curry"
+        app:layout_constraintBottom_toTopOf="@+id/lasagne"
+        app:layout_constraintEnd_toStartOf="@+id/guinness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/guinness"
+        android:layout_width="187dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/guinness"
+        app:layout_constraintBottom_toTopOf="@+id/salad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/curry"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/lasagne"
+        android:layout_width="222dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="59dp"
+        android:src="@drawable/lasagne"
+        app:layout_constraintBottom_toTopOf="@+id/menuButton"
+        app:layout_constraintEnd_toStartOf="@+id/guinness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curry" />
+
+    <ImageView
+        android:id="@+id/salad"
+        android:layout_width="183dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="54dp"
+        android:src="@drawable/salad"
+        app:layout_constraintBottom_toTopOf="@+id/menuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lasagne"
+        app:layout_constraintTop_toBottomOf="@+id/guinness" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="106dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="9dp"
+        android:src="@drawable/pisces"
+        app:layout_constraintBottom_toTopOf="@+id/curry"
+        app:layout_constraintEnd_toStartOf="@+id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="114dp"
+        android:layout_height="79dp"
+        android:src="@drawable/pisces"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
