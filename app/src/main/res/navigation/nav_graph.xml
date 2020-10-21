@@ -53,8 +53,8 @@
     <fragment
         android:id="@+id/starter_menu"
         android:name="com.example.piscesmenu.starter_menu"
-        android:label="fragment_starter_menu2"
-        tools:layout="@layout/fragment_starter_menu2" >
+        android:label="fragment_starter_menu"
+        tools:layout="@layout/fragment_starter_menu">
         <action
             android:id="@+id/action_starter_menu_to_dinner_menu"
             app:destination="@id/dinner_menu" />
